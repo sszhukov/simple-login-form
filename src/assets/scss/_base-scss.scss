@@ -1,0 +1,47 @@
+@mixin baseFormField {
+  width: 100%;
+  background: $baseBackgroundColor;
+  border: 1px solid $nonActiveColor;
+  box-shadow: $baseBoxShadow;
+  border-radius: $baseBorderRadius;
+  color: $colorTextActive;
+  line-height: 21px;
+  padding: $formFieldPadding;
+  margin-bottom: 2rem;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  outline: none;
+}
+
+@mixin baseFont {
+  font-family: 'IBM Plex Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+@mixin centerPositionFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin iconMaskImage {
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+$baseBorderRadius: 6px;
+$formFieldPadding: 1rem;
+$baseBoxShadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+
+$baseBackgroundColor: #FFFFFF;
+$nonActiveColor: #DBE2EA;
+$colorTextActive: #2C2738;
+$colorSecondaryText: #756F86;
+$colorPlaceholderText: #7C9CBF;
+$colorPrimary: #0880AE;
+$secondaryColor: #7C9CBF;
+$errorColor: #FF7171;
